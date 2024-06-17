@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notify Me Button</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="notifyButton">Notify Me!</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#notifyButton').click(function() {
+                $.ajax({
+                    url: 'http://localhost:3000/notify', // Adjust URL if using a different port or domain
+                    method: 'GET',
+                    success: function(response) {
+                        alert('Notification sent!');
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error sending notification:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
