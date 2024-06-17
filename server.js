@@ -4,8 +4,8 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const botToken = 7365493370:AAE1itMZSI84NR2SDNmCnHy3Hmi8NxVp1Nk;
-const chatId = 265513408;
+const botToken = '7365493370:AAE1itMZSI84NR2SDNmCnHy3Hmi8NxVp1Nk';
+const chatId = '265513408';
 
 app.use(cors()); // Enable CORS
 
