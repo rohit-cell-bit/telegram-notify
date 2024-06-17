@@ -16,10 +16,12 @@
                     url: 'https://telegram-notify-psi.vercel.app/notify',
                     method: 'GET',
                     success: function(response) {
-                        alert('Notification sent!');
+                        alert('Notification sent successfully!');
+                        console.log('Notification sent:', response);
                     },
                     error: function(xhr, status, error) {
                         console.error('Error sending notification:', error);
+                        alert('Failed to send notification. Please try again later.');
                     }
                 });
             });
