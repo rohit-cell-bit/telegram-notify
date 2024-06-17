@@ -13,7 +13,7 @@
         $(document).ready(function() {
             $('#notifyButton').click(function() {
                 $.ajax({
-                    url: 'http://localhost:3000/notify', // Adjust URL if using a different port or domain
+                    url: 'https://telegram-notify-sepia.vercel.app/notify', // Update this URL
                     method: 'GET',
                     success: function(response) {
                         alert('Notification sent!');
@@ -27,3 +27,4 @@
     </script>
 </body>
 </html>
+
