@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
             $(document).ready(function() {
                 $('#notifyButton').click(function() {
                     $.ajax({
-                        url: 'http://localhost:${port}/notify',
+                        url: 'telegram-notify-sigma.vercel.app/notify',
                         method: 'GET',
                         success: function(response) {
                             alert('Notification sent!');
